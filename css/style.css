@@ -1,4 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&family=Mulish&family=Open+Sans:wght@300;400;600&display=swap');
+@font-face {
+    font-family: "Barlow";
+    font-weight: 300;
+    font-weight: 500;
+    src: local("Barlow"),
+    url("/fonts/Barlow/Barlow-Light.ttf"),
+    url("/fonts/Barlow/Barlow-Medium.ttf") ;
+}
+
+@font-face {
+    font-family: "Mulish";
+    font-weight: 400;
+    src: local("Mulish"),
+    url("/fonts/Mulish/static/Mulish-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-weight: 400;
+    font-weight: 600;
+    src: local("Open Sans"),
+    url("/fonts/Open_Sans/static/OpenSans/OpenSans-Light.ttf");
+    url("/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf");
+    url("/fonts/Open_Sans/static/OpenSans/OpenSans-SemiBold.ttf");
+}
+body{
+    font-family: "Barlow", "Mulish", "Open+Sans";
+    width: 1349px;
+    height: 5349px;
+}
 
 .nav {
     display: flex;
@@ -101,6 +131,7 @@
 .switch-right {
     margin-left: 46.93px;
 }
+
 .header-block-sale {
     display: flex;
     margin-left: 146px;
@@ -120,7 +151,8 @@
     height: 93px;
     width: 112.7px;
 }
-.header-p-from{
+
+.header-p-from {
     padding-top: 11px;
     padding-left: 29px;
     font-family: Barlow;
@@ -131,7 +163,8 @@
     text-align: left;
     margin-bottom: -20px;
 }
-.header-p-sale{
+
+.header-p-sale {
     padding-left: 29px;
     font-family: Barlow;
     font-size: 18px;
@@ -141,7 +174,8 @@
     text-align: left;
     margin-bottom: -16px;
 }
-.header-p-per_night{
+
+.header-p-per_night {
     font-family: Barlow;
     font-size: 12px;
     font-weight: 300;
@@ -150,6 +184,7 @@
     text-align: left;
     padding-left: 46px;
 }
+
 .header-block-sale-link {
     text-decoration: none;
     padding: 36px 78px 36px 77px;
@@ -167,6 +202,7 @@
 .header-block-sale-text {
     white-space: nowrap
 }
+
 .the_cabins {
     margin-top: 148px;
 }
@@ -608,6 +644,8 @@
 .footer-container {
     background-color: #5B6460;
     margin-top: 133px;
+    height: 400px;
+    width: 1349px;
 }
 
 .footer-content {
@@ -648,7 +686,8 @@
     border-bottom: 1px solid #FFFFFF;
     outline: none;
 }
-.img-event{
+
+.img-event {
     padding-top: 24px;
     margin-left: -35px;
 }
@@ -663,7 +702,8 @@
     text-align: left;
     color: #FFFFFF;
 }
-.footer-slogan{
+
+.footer-slogan {
     margin-top: 70px;
     padding-left: 118px;
     font-family: Open Sans;
@@ -674,12 +714,14 @@
     text-align: left;
     color: #EFEFEF;
 }
-.aside{
+
+.aside {
     padding-top: 70px;
     display: flex;
 
 }
-.p-terms_and_conditions{
+
+.p-terms_and_conditions {
     font-family: Barlow;
     color: #FFFFFF;
     margin-right: 33px;
@@ -691,7 +733,8 @@
     text-align: left;
 
 }
-.p-cencellation_policy{
+
+.p-cencellation_policy {
     font-family: Barlow;
     margin-right: 31px;
     color: #FFFFFF;
@@ -701,7 +744,8 @@
     letter-spacing: 0px;
     text-align: left;
 }
-.p-privacy_policy{
+
+.p-privacy_policy {
     font-family: Barlow;
     color: #FFFFFF;
     font-size: 14px;
@@ -710,19 +754,24 @@
     letter-spacing: 0px;
     text-align: left;
 }
-.payment{
-    margin-top:60px;
+
+.payment {
+    margin-top: 60px;
     display: flex;
 }
-.paypal{
+
+.paypal {
     margin-left: 470px;
 }
-.mastercard{
+
+.mastercard {
     margin-left: 40px;
 }
-.visa{
+
+.visa {
     margin-left: 40px;
 }
-.bank{
+
+.bank {
     margin-left: 40px;
 }
