@@ -6,10 +6,6 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&family=Mulish&family=Open+Sans:wght@300;400;600&display=swap"
-          rel="stylesheet">
 </head>
 <body>
 <header class="header">
@@ -28,44 +24,50 @@
                 <li class="nav__list--text">About us</li>
                 <li class="nav__list--text">Faq</li>
             </ul>
-            <a class="flag">
-                <img src="img/denmark.svg" alt="Флаг">
+            <a class="language">
+                <img src="img/denmark.svg" alt="Флаг" width="25" height="25">
             </a>
         </nav>
         <div class="button">
-            <a class="button__a--book-now">Book now</a>
+            <a class="button button--book">Book now</a>
         </div>
     </div>
     <div class="slider">
-        <img class="slider__img" src="img/img-background.svg" alt="Виджет" width="100%" height="100%">
+        <div class="slider-line">
+            <img src="img/01-cs.svg" alt="" width="1400" height="768">
+            <img src="img/01-cs.svg" alt="" width="1400" height="768">
+            <img src="img/01-cs.svg" alt="" width="1400" height="768">
+        </div>
         <div class="slider__text">
             <h1 class="slider__text--h1">Find peace in the Forest</h1>
-            <p class="slider__text--p">Come and stay in out hut hotel near Mariager Fjord in Denmark</p>
+            <p class="slider__text--p">Come and stay in out hut hotel near <br> Mariager Fjord in Denmark</p>
         </div>
         <div class="slider__switch">
-            <a class="slider__switch--left" onclick="plusSlides(-1)">
+            <a class="slider__switch--left">
                 <img src="img/switch-left.svg" alt="левый переключатель" width="33" height="15">
             </a>
-            <a class="slider__switch--right" onclick="plusSlides(1)">
+            <a class="slider__switch--right">
                 <img src="img/switch-right.svg" alt="правый переключатель" width="33" height="15">
             </a>
         </div>
-        <div class="slider__sale">
-            <div class="slider__sale--left">
+        <div class="sale">
+            <div class="sale__left">
                 <a class="slider__sale--link">Book now</a>
             </div>
-            <div class="slider__sale--right">
-                <div class="slider__sale--text">
-                    <p class="slider__sale--text-from">from</p>
-                    <p class="slider__sale--text-price">€3.200</p>
-                    <p class="slider__sale--text-per-night">per night</p>
+            <div class="sale__right">
+                <div class="sale__right--text">
+                    <p class="sale__right sale__right--text-from">from</p>
+                    <p class="sale__right sale__right--text-price">€3.200</p>
+                    <p class="sale__right sale__right--text-per">per night</p>
                 </div>
             </div>
         </div>
     </div>
     </div>
 </header>
-<main></main>
+<main>
+</main>
 <footer></footer>
+<script src="script.js"></script>
 </body>
 </html>

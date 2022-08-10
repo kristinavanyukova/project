@@ -1,0 +1,143 @@
+/* Собственно сам слайдер */
+.slider{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    height: 700px;
+    margin-bottom: 15px;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.sliderImg{
+    object-fit: cover;
+    width: 100%;
+    height: 700px;
+    border: none !important;
+    box-shadow: none !important;
+}
+/* Кнопки вперед и назад */
+
+.prev{
+    cursor: pointer;
+    position: absolute;
+    top: 95%;
+    left: 47%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next{
+    cursor: pointer;
+    position: absolute;
+    top: 95%;
+    right: 47%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px 0 0 3px;
+}
+
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slideText {
+    position: relative;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    top: -587px;
+    /*transform: translate(-50%, -50%);*/
+    /*Тень*/
+}
+
+.slider-header{
+    position: relative;
+    right: 58px;
+    font-size: 70px;
+    line-height: 72px;
+    /* identical to box height, or 103% */
+    text-align: right;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+
+.slider-description{
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    /* or 140% */
+
+    text-align: center;
+    left: 943px;
+    top: -40px;
+    width: 328px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+
+
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .slider, .sliderImg, .sliderText {
+        width: 99%;
+    }
+
+    .sliderImg {
+        height: 500px;
+    }
+
+    .slider-header {
+        width: 99%;
+        font-size: 50px;
+        margin-top: 140px;
+    }
+
+    .slider-description {
+        width: 99%;
+        left: 55px;
+    }
+
+    .prev {
+        top: 65%;
+        left: 40%;
+    }
+
+    .next {
+        top: 65%;
+        right: 40%;
+    }
+
+}
