@@ -6,6 +6,8 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
 <header class="header">
@@ -24,45 +26,51 @@
                 <li class="nav__list--text">About us</li>
                 <li class="nav__list--text">Faq</li>
             </ul>
-            <a class="language">
-                <img src="img/denmark.svg" alt="Флаг" width="25" height="25">
-            </a>
+            <select class="lang">
+                <a href="#"><img src="img/denmark.svg" alt=""></a>
+            </select>
         </nav>
         <div class="button">
-            <a class="button button--book">Book now</a>
+            <button class="button button--book">Book now</button>
         </div>
     </div>
-    <div class="slider">
-        <div class="slider-line">
-            <img src="img/01-cs.svg" alt="" width="1400" height="768">
-            <img src="img/01-cs.svg" alt="" width="1400" height="768">
-            <img src="img/01-cs.svg" alt="" width="1400" height="768">
+    <div class="swiper">
+        <!-- Обёртка свипера -->
+        <div class="swiper-wrapper">
+            <!-- Cлайды -->
+            <div class="swiper-slide"><img src="img/01-cs.jpg" alt="" width="1400" height="768"></div>
+            <div class="swiper-slide"><img src="img/03-cs.jpg" alt="" width="1400" height="768"></div>
+            <div class="swiper-slide"><img src="img/06-cs.jpg" alt="" width="1400" height="768"></div>
         </div>
-        <div class="slider__text">
-            <h1 class="slider__text--h1">Find peace in the Forest</h1>
-            <p class="slider__text--p">Come and stay in out hut hotel near <br> Mariager Fjord in Denmark</p>
+
+        <!-- Переключатели -->
+        <div class="swiper-button-prev">
+
         </div>
-        <div class="slider__switch">
-            <a class="slider__switch--left">
-                <img src="img/switch-left.svg" alt="левый переключатель" width="33" height="15">
-            </a>
-            <a class="slider__switch--right">
-                <img src="img/switch-right.svg" alt="правый переключатель" width="33" height="15">
-            </a>
+        <div class="swiper-button-next">
+
         </div>
-        <div class="sale">
-            <div class="sale__left">
-                <a class="slider__sale--link">Book now</a>
-            </div>
-            <div class="sale__right">
-                <div class="sale__right--text">
-                    <p class="sale__right sale__right--text-from">from</p>
-                    <p class="sale__right sale__right--text-price">€3.200</p>
-                    <p class="sale__right sale__right--text-per">per night</p>
-                </div>
-            </div>
+        <!-- Скролл -->
+        <div class="swiper-scrollbar"></div>
+
+        <div class="swiper-text">
+            <h1 class="swiper-text__h1">Find peace in the Forest</h1>
+            <p class="swiper-text__p">Come and stay in out hut hotel near<br> Mariager Fjord in Denmark</p>
         </div>
+
     </div>
+
+    <div class="sale">
+        <div class="sale__left">
+            <button class="slider__sale--link">Book now</button>
+        </div>
+        <div class="sale__right">
+            <div class="sale__right--text">
+                <p class="sale__right sale__right--text-from">from</p>
+                <p class="sale__right sale__right--text-price">€3.200</p>
+                <p class="sale__right sale__right--text-per">per night</p>
+            </div>
+        </div>
     </div>
 </header>
 <main>

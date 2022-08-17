@@ -1,18 +1,18 @@
-let offset = 0;
-const sliderLine = document.querySelector('.slider-line');
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
 
-document.querySelector('.slider__switch--right').addEventListener('click', function(){
-    offset = offset + 1349;
-    if (offset > 3000) {
-        offset = 0;
-    }
-    sliderLine.style.left = -offset + 'px';
-});
 
-document.querySelector('.slider__switch--left').addEventListener('click', function () {
-    offset = offset - 1349;
-    if (offset < 3000) {
-        offset = 0;
-    }
-    sliderLine.style.left = -offset + 'px';
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
 });
