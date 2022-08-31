@@ -12,13 +12,20 @@
 <body>
 <header class="header">
     <div class="nav-menu">
+        <div class="hamb">
+            <div class="hamb__field" id="hamb">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
         <div class="logo">
             <a class="logo__link">
                 <img src="img/logo.svg" alt="Логотип" width="70" height="61">
             </a>
         </div>
         <nav class="nav">
-            <ul class="nav__list">
+            <ul class="nav__list" id="menu">
                 <li class="nav__list--text">Home</li>
                 <li class="nav__list--text">The hut</li>
                 <li class="nav__list--text">The area</li>
@@ -26,10 +33,23 @@
                 <li class="nav__list--text">About us</li>
                 <li class="nav__list--text">Faq</li>
             </ul>
-            <select class="lang">
-                <a href="#"><img src="img/denmark.svg" alt=""></a>
-            </select>
+           <div class="lang-menu">
+                <div class="selected-lang">
+                </div>
+               <ul>
+                   <li>
+                       <a class="dk" href="#">Dk</a>
+                   </li>
+                   <li>
+                       <a class="ru" href="#">Ru</a>
+                   </li>
+                   <li>
+                       <a class="fr" href="#">Fr</a>
+                   </li>
+               </ul>
+           </div>
         </nav>
+        <div class="popup" id="popup"></div>
         <div class="button">
             <button class="button button--book">Book now</button>
         </div>
@@ -43,13 +63,12 @@
             <div class="swiper-slide"><img src="img/06-cs.jpg" alt="" width="1400" height="768"></div>
         </div>
 
-        <!-- Переключатели -->
-        <div class="swiper-button-prev">
 
+        <div class="switch">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
-        <div class="swiper-button-next">
 
-        </div>
         <!-- Скролл -->
         <div class="swiper-scrollbar"></div>
 
@@ -62,7 +81,7 @@
 
     <div class="sale">
         <div class="sale__left">
-            <button class="slider__sale--link">Book now</button>
+            <button class="swiper__sale--link">Book now</button>
         </div>
         <div class="sale__right">
             <div class="sale__right--text">
