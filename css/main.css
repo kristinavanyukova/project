@@ -1,0 +1,101 @@
+/*main*/
+main {
+    /*Разное*/
+    overflow: hidden;
+}
+
+
+.content {
+    /*Позиционирование*/
+    left: 0;
+
+    /*Блочная модель*/
+    display: flex;
+    max-width: 1408px;
+    height: 747px;
+    margin-top: 150px;
+}
+
+.aside {
+    /*Блочная модель*/
+    width: 465px;
+    height: 351px;
+    padding-top: 87px;
+    padding-left: 147px;
+}
+
+.aside__title {
+    /*Типографика*/
+    font-family: "Open Sans", arial, sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    color: #5B6460;
+}
+
+.aside__excerpt {
+    /*Блочная модель*/
+    margin-top: 50px;
+    margin-bottom: 29px;
+
+    /*Типографика*/
+    font-family: "Open Sans", arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.aside__link {
+    /*Типографика*/
+    font-family: "Open Sans", arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #5B6460;
+}
+
+.picture {
+    /*Позиционирование*/
+    right: 0;
+
+    /*Блочная модель*/
+    margin-left: 105px;
+}
+
+.media {
+    /*Блочная модель*/
+    display: flex;
+    max-width: 1408px;
+    height: 413px;
+    margin-top: -10%;
+    margin-left: 31px;
+    margin-right: 32px;
+}
+
+.media--thumbnail {
+    /*Блочная модель*/
+    width: 432px;
+    height: 387px;
+    padding-right: 24px;
+
+    /*Анимация*/
+    transition: transform 0.25s;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+
+}
+
+.media--thumbnail:hover {
+    /*Анимация*/
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(1.1);
+}

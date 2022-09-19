@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 </head>
 <body>
 <header class="header">
@@ -20,9 +20,9 @@
             </div>
         </div>
         <div class="section" id="popup"></div>
-            <a class="nav-menu__logo">
-                <img src="img/logo.svg" alt="Логотип" width="70" height="61">
-            </a>
+        <a class="nav-menu__logo">
+            <img src="img/logo.svg" alt="Логотип" width="70" height="61">
+        </a>
 
         <nav class="nav">
             <ul class="nav__list" id="menu">
@@ -33,27 +33,22 @@
                 <li><a class="nav__list--item" href="#">About us</a></li>
                 <li><a class="nav__list--item" href="#">Faq</a></li>
             </ul>
-            <div class="lang-menu">
-                <div class="selected-lang">
+            <div class="languages">
+                <div class="languages__list">
+                    <a class="languages__item languages__item--active" href="#">
+                        <img src="img/denmark.png" alt="denmark" width="25" height="25">
+                    </a>
+                    <a class="languages__item languages__item--show" href="#">
+                        <img src="img/russia.png" alt="rus" width="25" height="25">
+                    </a>
                 </div>
-                <ul>
-                    <li>
-                        <a class="dk" href="#">Dk</a>
-                    </li>
-                    <li>
-                        <a class="ru" href="#">Ru</a>
-                    </li>
-                    <li>
-                        <a class="fr" href="#">Fr</a>
-                    </li>
-                </ul>
             </div>
         </nav>
         <div class="button">
             <button class="button button--book">Book now</button>
         </div>
     </div>
-    <div>
+    <div class="carousel">
         <div class="main-slider swiper">
             <!-- Обёртка свипера -->
             <div class="swiper-wrapper">
@@ -64,35 +59,72 @@
             </div>
 
             <div class="slider-control">
-                <div class="slider__btn-prev swiper-button-prev"></div>
-                <div class="slider__btn-next swiper-button-next"></div>
+                <div class="slider__btn-prev">
+                    <svg width="35" height="17" viewBox="0 0 35 17" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.414 9.18187H1.65302C1.31106 9.18187 1.03353 8.87642 1.03353 8.50006C1.03353 8.12369 1.31106 7.81824 1.65302 7.81824H33.414C33.756 7.81824 34.0335 8.12369 34.0335 8.50006C34.0335 8.87642 33.756 9.18187 33.414 9.18187Z"
+                              fill="#DADADA"/>
+                        <path d="M8.87947 16C8.80211 16 8.72475 15.9718 8.66552 15.916L1.08824 8.70203C1.03203 8.64794 1 8.57487 1 8.49835C1 8.42182 1.03203 8.34875 1.08824 8.29467L8.66612 1.08415C8.78398 0.971951 8.97557 0.971951 9.09343 1.08415C9.21128 1.19634 9.21128 1.37874 9.09343 1.49093L1.7295 8.49835L9.09343 15.5086C9.21128 15.6208 9.21128 15.8032 9.09343 15.9154C9.0342 15.9718 8.95683 16 8.87947 16Z"
+                              stroke="#DADADA" stroke-width="0.681818"/>
+                    </svg>
+                </div>
+                <div class="slider__btn-next">
+                    <svg width="35" height="17" viewBox="0 0 35 17" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.414 9.18187H1.65302C1.31106 9.18187 1.03353 8.87642 1.03353 8.50006C1.03353 8.12369 1.31106 7.81824 1.65302 7.81824H33.414C33.756 7.81824 34.0335 8.12369 34.0335 8.50006C34.0335 8.87642 33.756 9.18187 33.414 9.18187Z"
+                              fill="#DADADA"/>
+                        <path d="M8.87947 16C8.80211 16 8.72475 15.9718 8.66552 15.916L1.08824 8.70203C1.03203 8.64794 1 8.57487 1 8.49835C1 8.42182 1.03203 8.34875 1.08824 8.29467L8.66612 1.08415C8.78398 0.971951 8.97557 0.971951 9.09343 1.08415C9.21128 1.19634 9.21128 1.37874 9.09343 1.49093L1.7295 8.49835L9.09343 15.5086C9.21128 15.6208 9.21128 15.8032 9.09343 15.9154C9.0342 15.9718 8.95683 16 8.87947 16Z"
+                              stroke="#DADADA" stroke-width="0.681818"/>
+                    </svg>
+                </div>
             </div>
             <!-- Скролл -->
-            <div class="swiper-scrollbar"></div>
+            <div class="scrollbar-main swiper-scrollbar"></div>
 
             <div class="slider-text">
                 <h1 class="slider-text__title">Find peace in the Forest</h1>
-                <p class="slider-text__description">Come and stay in out hut hotel near<br> Mariager Fjord in Denmark</p>
+                <p class="slider-text__description">Come and stay in out hut hotel near<br> Mariager Fjord in Denmark
+                </p>
             </div>
         </div>
 
         <div class="sale">
-            <div class="sale__left">
+            <div class="sale--left">
                 <button class="sale__btn">Book now</button>
             </div>
-            <div class="sale__right">
-                <div class="sale__right--text">
+            <div class="sale--right">
+                <div class="sale__content--right">
                     <span>from</span>
-                    <span class="sale__right sale__right--text-value">€3.200</span>
-                    <span class="sale__right sale__right--text-per">per night</span>
+                    <span class="sale--right sale__text-value">€3.200</span>
+                    <span class="sale--right sale__text--per">per night</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 <main>
+    <section class="content">
+        <div class="aside">
+            <h2 class="aside__title">The Cabins</h2>
+            <p class="aside__excerpt">Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by
+                architect Sigurd Larsen. They all have an open space with a double bed, a double sofa bed, kitchen,
+                separate toilet and an outdoor shower. On the roof, surrounded by treetops, there is a terrace, which is
+                about nine meters above ground. The cottages are built around tall, old trees that go through the entire
+                cottage from floor to ceiling.</p>
+            <a class="aside__link" href="#">Read More</a>
+        </div>
+        <div class="picture">
+            <img src="img/cabins.jpg" alt="picture" width="693" height="438">
+        </div>
+    </section>
+    <section class="media">
+        <img class="media--thumbnail" src="img/house01.jpg" alt="" width="432" height="387">
+        <img class="media--thumbnail" src="img/house02.jpg" alt="" width="432" height="387">
+        <video class="media--thumbnail" controls autoplay width="432" height="387" poster="img/house03.jpg">
+            <source src="img/house03.jpg">
+        </video>
+    </section>
 </main>
 <footer></footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
