@@ -7,8 +7,8 @@ const swiper = new Swiper('.swiper', {
 
     // Navigation arrows
     navigation: {
-        nextEl: '.slider__btn-prev',
-        prevEl: '.slider__btn-next',
+        nextEl: '.slider-control__btn-prev',
+        prevEl: '.slider-control__btn-next',
     },
 
     // And if we need scrollbar
@@ -17,9 +17,8 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-
 const hamb = document.querySelector("#hamb");
-const popup = document.querySelector("#popup");
+const section = document.querySelector("#section");
 const body = document.body;
 // Клонируем меню, чтобы задать свои стили для мобильной версии
 const menu = document.querySelector("#menu").cloneNode(1);
@@ -30,7 +29,7 @@ hamb.addEventListener("click", hambHandler);
 function hambHandler(e) {
     e.preventDefault();
     // Переключаем стили элементов при клике
-    popup.classList.toggle("open");
+    section.classList.toggle("open");
     hamb.classList.toggle("active");
     body.classList.toggle("noscroll");
     renderPopup();
@@ -38,7 +37,7 @@ function hambHandler(e) {
 
 // Здесь мы рендерим элементы в наш попап
 function renderPopup() {
-    popup.appendChild(menu);
+    section.appendChild(menu);
 
 }
 

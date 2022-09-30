@@ -38,20 +38,21 @@
 .nav__list {
     /*Блочная модель*/
     display: flex;
+    margin-left: 48px;
 
     /*Типографика*/
     list-style-type: none;
     text-transform: uppercase;
+
+    gap: 36px;
 }
 
-.nav__list--item {
-    /*Блочная модель*/
-    margin-right: 20px;
-
+.nav__list-item {
     /*Типографика*/
     font-family: "DIN", arial, sans-serif;
-    font-size: 14px;
+    font-style: normal;
     font-weight: 300;
+    font-size: 14px;
     line-height: 24px;
     color: black;
 
@@ -59,7 +60,7 @@
     text-decoration: none;
 }
 
-.nav__list--item:hover {
+.nav__list-item:hover {
     /*Типографика*/
     font-weight: bold;
 
@@ -71,7 +72,8 @@
     /*Позиционирование*/
     position: relative;
     z-index: 1;
-    left: 70px;
+
+    margin-left: 25px;
 }
 
 .languages__list {
@@ -116,6 +118,7 @@
 
     /*Типографика*/
     font-family: "DIN", arial, sans-serif;
+    font-style: normal;
     font-size: 14px;
     font-weight: 300;
     line-height: 28px;
@@ -137,6 +140,8 @@
 
     /*Анимация*/
     transition-duration: 1.8ms;
+
+    cursor: pointer;
 }
 
 .swiper {
@@ -158,7 +163,7 @@
     right: 0;
 }
 
-.scrollbar-main {
+.swiper-scrollbar {
     /*Позиционирование*/
     left: 40px;
 }
@@ -177,7 +182,8 @@
 
 .slider-text__title {
     /*Типографика*/
-    font-family: "DIN", arial, sans-serif;
+    font-family: "Open Sans Light", arial, sans-serif;
+    font-style: normal;
     font-size: 70px;
     font-weight: 300;
     line-height: 72px;
@@ -190,11 +196,12 @@
 
 .slider-text__description {
     /*Блочная модель*/
-    margin-top: -11px;
-    margin-right: -209px;
+    margin-top: -12px;
+    margin-right: -251px;
 
     /*Типографика*/
-    font-family: "Mulish", arial, sans-serif;
+    font-family: "Mulish Light", arial, sans-serif;
+    font-style: normal;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -212,7 +219,7 @@
     display: flex;
 }
 
-.slider__btn-prev {
+.slider-control__btn-prev{
     /*Позиционирование*/
     position: absolute;
     z-index: 5;
@@ -223,15 +230,16 @@
 
     /*Анимация*/
     transform: translateX(-50%);
+
+    cursor: pointer
 }
 
-.slider__btn-prev:hover {
+.slider-control__btn-prev:hover {
     /*Разное*/
-    stroke: #FFFFFF;
     fill: #FFFFFF;
 }
 
-.slider__btn-next {
+.slider-control__btn-next {
     /*Позиционирование*/
     position: absolute;
     z-index: 5;
@@ -244,11 +252,12 @@
     /*Анимация*/
     transform: translateX(-50%);
     transform: rotate(180deg);
+
+    cursor: pointer
 }
 
-.slider__btn-next:hover {
+.slider-control__btn-next:hover {
     /*Разное*/
-    stroke: #FFFFFF;
     fill: #FFFFFF;
 }
 
@@ -266,10 +275,11 @@
     /*Типографика*/
     color: #FFFFFF;
 
-    /*Разное*/
-    cursor: pointer;
-}
 
+}
+.sale--left{
+cursor:pointer
+}
 
 .sale__btn {
     /*Блочная модель*/
@@ -280,6 +290,7 @@
 
     /*Типографика*/
     font-family: "DIN", arial, sans-serif;
+    font-style: normal;
     font-size: 18px;
     font-weight: 300;
     line-height: 28px;
@@ -293,6 +304,7 @@
 
     /*Разное*/
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .sale__btn:hover {
@@ -310,6 +322,8 @@
 
     /*Оформление*/
     background-color: #E9ECE0;
+
+    cursor:pointer;
 }
 
 .sale__content--right {
@@ -318,6 +332,7 @@
 
     /*Типографика*/
     font-family: "DIN", arial, sans-serif;
+    font-style: normal;
     font-size: 12px;
     font-weight: 300;
     line-height: 18px;
@@ -328,6 +343,7 @@
 .sale__text-value {
     /*Типографика*/
     font-family: "DIN", arial, sans-serif;
+    font-style: normal;
     font-size: 22px;
     font-weight: 500;
     line-height: 28px;
@@ -343,6 +359,7 @@
 
     /*Типографика*/
     font-family: "DIN", arial, sans-serif;
+    font-style: normal;
     font-size: 12px;
     font-weight: 300;
     line-height: 18px;

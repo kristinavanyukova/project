@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
-    <link rel="stylesheet" href="css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -19,26 +19,26 @@
                 <span class="tab"></span>
             </div>
         </div>
-        <div class="section" id="popup"></div>
+        <div class="section" id="section"></div>
         <a class="nav-menu__logo">
             <img src="img/logo.svg" alt="Логотип" width="70" height="61">
         </a>
 
         <nav class="nav">
             <ul class="nav__list" id="menu">
-                <li><a class="nav__list--item" href="#">Home</a></li>
-                <li><a class="nav__list--item" href="#">The hut</a></li>
-                <li><a class="nav__list--item" href="#">The area</a></li>
-                <li><a class="nav__list--item" href="#">Booking</a></li>
-                <li><a class="nav__list--item" href="#">About us</a></li>
-                <li><a class="nav__list--item" href="#">Faq</a></li>
+                <li><a class="nav__list-item" href="#">Home</a></li>
+                <li><a class="nav__list-item" href="#">The hut</a></li>
+                <li><a class="nav__list-item" href="#">The area</a></li>
+                <li><a class="nav__list-item" href="#">Booking</a></li>
+                <li><a class="nav__list-item" href="#">About us</a></li>
+                <li><a class="nav__list-item" href="#">Faq</a></li>
             </ul>
             <div class="languages">
                 <div class="languages__list">
                     <a class="languages__item languages__item--active" href="#">
                         <img src="img/denmark.png" alt="denmark" width="25" height="25">
                     </a>
-                    <a class="languages__item languages__item--show" href="#">
+                    <a class="languages__item" href="#">
                         <img src="img/russia.png" alt="rus" width="25" height="25">
                     </a>
                 </div>
@@ -59,7 +59,7 @@
             </div>
 
             <div class="slider-control">
-                <div class="slider__btn-prev">
+                <div class="slider-control__btn-prev">
                     <svg width="35" height="17" viewBox="0 0 35 17" xmlns="http://www.w3.org/2000/svg">
                         <path d="M33.414 9.18187H1.65302C1.31106 9.18187 1.03353 8.87642 1.03353 8.50006C1.03353 8.12369 1.31106 7.81824 1.65302 7.81824H33.414C33.756 7.81824 34.0335 8.12369 34.0335 8.50006C34.0335 8.87642 33.756 9.18187 33.414 9.18187Z"
                               fill="#DADADA"/>
@@ -67,7 +67,7 @@
                               stroke="#DADADA" stroke-width="0.681818"/>
                     </svg>
                 </div>
-                <div class="slider__btn-next">
+                <div class="slider-control__btn-next">
                     <svg width="35" height="17" viewBox="0 0 35 17" xmlns="http://www.w3.org/2000/svg">
                         <path d="M33.414 9.18187H1.65302C1.31106 9.18187 1.03353 8.87642 1.03353 8.50006C1.03353 8.12369 1.31106 7.81824 1.65302 7.81824H33.414C33.756 7.81824 34.0335 8.12369 34.0335 8.50006C34.0335 8.87642 33.756 9.18187 33.414 9.18187Z"
                               fill="#DADADA"/>
@@ -77,7 +77,7 @@
                 </div>
             </div>
             <!-- Скролл -->
-            <div class="scrollbar-main swiper-scrollbar"></div>
+            <div class="slider-scroll swiper-scrollbar"></div>
 
             <div class="slider-text">
                 <h1 class="slider-text__title">Find peace in the Forest</h1>
@@ -104,7 +104,8 @@
     <section class="content">
         <div class="aside">
             <h2 class="aside__title">The Cabins</h2>
-            <p class="aside__excerpt">Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by
+            <p class="aside__description">Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed
+                by
                 architect Sigurd Larsen. They all have an open space with a double bed, a double sofa bed, kitchen,
                 separate toilet and an outdoor shower. On the roof, surrounded by treetops, there is a terrace, which is
                 about nine meters above ground. The cottages are built around tall, old trees that go through the entire
@@ -116,11 +117,105 @@
         </div>
     </section>
     <section class="media">
-        <img class="media--thumbnail" src="img/house01.jpg" alt="" width="432" height="387">
-        <img class="media--thumbnail" src="img/house02.jpg" alt="" width="432" height="387">
-        <video class="media--thumbnail" controls autoplay width="432" height="387" poster="img/house03.jpg">
-            <source src="img/house03.jpg">
-        </video>
+        <img class="media__img" src="img/house01.jpg" alt="">
+        <img class="media__img" src="img/house02.jpg" alt="">
+        <div class="media-video">
+            <img class="media-video__img" src="img/house03.jpg" alt="">
+            <img class="media-video__player" src="img/video.png" alt="">
+        </div>
+    </section>
+    <section class="content-main content">
+        <div class="content-map">
+            <img class="content-map__img" src="img/screen.jpg" alt="" width="704" height="650">
+            <a class="content-map__link" href="">We are here</a>
+        </div>
+        <div class="content-text">
+            <h2 class="content-text__title">The Forest</h2>
+            <p class="content-text__description">Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are
+                designed by architect Sigurd Larsen.
+                They all have an open space with a double bed, a double sofa bed, kitchen, separate toilet and an
+                outdoor shower. On the roof, surrounded by treetops, there is a terrace, which is about nine meters
+                above ground. The cottages are built around tall, old trees that go through the entire cottage from
+                floor to ceiling.</p>
+            <a class="content-text__link" href="#">Read More</a>
+        </div>
+    </section>
+    <section class="facilities">
+        <h2 class="facilities__title">Facilities</h2>
+        <div class="facilities__container">
+
+            <div class="facilities__container-item">
+                <img src="img/fridge.svg" alt="" width="70" height="70">
+                <p class="facilities__container-item-name">Mini fridge</p>
+            </div>
+            <div class="facilities__container-item">
+                <img src="img/kitchen.svg" alt="" width="70" height="70">
+                <p class="facilities__container-item-name">Kitchenette</p>
+            </div>
+            <div class="facilities__container-item">
+                <img src="img/coffee.svg" alt="" width="70" height="70">
+                <p class="facilities__container-item-name">Coffee machine</p>
+            </div>
+            <div class="facilities__container-item">
+                <img src="img/frame.svg" alt="" width="70" height="70">
+                <p class="facilities__container-item-name">Electric tea kettle</p>
+            </div>
+            <div class="facilities__container-item">
+                <img src="img/park.svg" alt="" width="70" height="70">
+                <p class="facilities__container-item-name">Parking</p>
+            </div>
+            <div class="facilities__container-item">
+                <img src="img/trees.svg" alt="" width="70" height="70">
+                <p class="facilities__container-item-name">Breathtaking views</p>
+            </div>
+            <div class="facilities__container-item">
+                <img src="img/temperature.svg" alt="" width="70" height="70">
+                <p class="facilities__container-item-name">Floor heating</p>
+            </div>
+            <div class="facilities__container-item">
+                <img src="img/plug.svg" alt="" width="70" height="70">
+                <p class="facilities__container-item-name">230V</p>
+            </div>
+            <div class="facilities__container-item">
+                <img src="img/wi-fi.svg" alt="" width="71" height="70">
+                <p class="facilities__container-item-name">Parking</p>
+            </div>
+            <div class="facilities__container-item">
+                <img src="img/shower.svg" alt="" width="70" height="70">
+                <p class="facilities__container-item-name">Shower</p>
+            </div>
+
+            <div class="facilities__container-item">
+                <img src="img/toilet.svg" alt="" width="70" height="70">
+                <p class="facilities__container-item-name">Flushing toilets</p>
+            </div>
+
+            <div class="facilities__container-item">
+                <img src="img/towels.svg" alt="" width="70" height="70">
+                <p class="facilities__container-item-name">Bedding & towels</p>
+            </div>
+
+        </div>
+    </section>
+    <section class="content-photo">
+        <img src="img/the-cabins.jpg" alt="" width="704" height="559">
+        <img src="img/unique-panorama.jpg" alt="" width="704" height="559">
+        <a class="content-photo__link" href="#">More about us</a>
+    </section>
+    <section class="advertisement">
+        <div class="advertisement-connection">
+            <h2 class="advertisement-connection__title">Stay in touch with us</h2>
+            <p class="advertisement-connection__text advertisement-connection__text-place"> Vesterborg, Denmark</p>
+            <p class="advertisement-connection__text advertisement-connection__text-telephone">+123 456 789 000</p>
+            <p class="advertisement-connection__text advertisement-connection__text-mail">info@theglasshuts.com</p>
+
+            <div class="advertisement-connection__socials">
+                <img class="advertisement-connection__socials-icon" src="img/instagram.svg" alt="" width="50" height="50">
+                <img class="advertisement-connection__socials-icon" src="img/facebook.svg" alt="" width="50" height="50">
+                <img class="advertisement-connection__socials-icon" src="img/twitter.svg" alt="" width="50" height="50">
+            </div>
+        </div>
+
     </section>
 </main>
 <footer></footer>
